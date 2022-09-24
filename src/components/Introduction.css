@@ -1,0 +1,322 @@
+@keyframes imageTransformation {
+    0% {transform: translate(0, 0);}
+    40% {transform: translate(0, -25px);}
+    100% {transform: translate(0, 0px);}
+}
+
+
+@keyframes TypingRegular {
+    0%, 30%, 100% {
+        width: 486.2px;
+    }
+    60% {
+        width: 0;
+    }
+}
+
+@keyframes Typing1200 {
+    0%, 30%, 100% {
+        width: 370px;
+    }
+    60% {
+        width: 0;
+    }
+}
+
+@keyframes Typing900 {
+    0%, 30%, 100% {
+        width: 310px;
+    }
+    60% {
+        width: 0;
+    }
+}
+
+@keyframes Typing700 {
+    0%, 30%, 100% {
+        width: 217px;
+    }
+    60% {
+        width: 0;
+    }
+}
+  
+.introductionSection {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+} 
+  
+.introductionContent {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.introContent1 {
+    width: auto;
+    height: auto;
+    display: flex;
+}
+  
+.introContent1 img {
+    width: 350px;
+    filter: drop-shadow(0 0 50px #777777);
+    animation: imageTransformation 2s infinite;
+    margin: auto;
+}
+  
+.introContent2 {
+    max-width: 600px;
+    width: 486px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+  
+.introContentText h1 {
+    font-size: 56px;
+    Font-family: "Antipasto Pro";
+    Font-style: "Regular";
+    font-weight: 100;
+    color: #4E4E4E;
+    animation: TypingRegular 5s steps(23);
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 20px 0px;
+}
+  
+.introContentText p {
+    font-size: 24px;
+    Font-family: "Antipasto Pro";
+    font-weight: 100;
+    color: #4E4E4E;
+    margin: 20px 0px;
+}
+  
+.introButtons button {
+    width: 165px;
+    height: 45px;
+    border-radius: 12px;
+    margin: 20px 0;
+    cursor: pointer;
+    outline: 0;
+    font-size: 20px;
+}
+  
+.btnLearnMore {
+    background-color: #DEDCD0;
+    color: #4E4E4E;
+    Font-family: "Antipasto Pro";
+    border: 3px solid #DEDCD0;
+    transition: 0.5s;
+}
+  
+.btnLearnMore:hover{
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+  
+.btnResume {
+    background-color: #ffffff;
+    color: #4E4E4E;
+    Font-family: "Antipasto Pro";
+    border: 3px solid #DEDCD0;
+    margin: 20px 20px !important;
+    transition: 0.5s;
+}
+  
+.btnResume:hover {
+    background-color: #DEDCD0;
+    transition: 0.5s;
+}
+  
+.introContentText svg {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+  
+.locationIcon {
+    color: rgb(203, 115, 115);
+}
+  
+.doneIcon {
+    color: rgb(77, 179, 77);
+}
+  
+.introContentText span {
+    font-size: 20px;
+    display: flex;
+    align-items: end;
+} 
+
+@media screen and (max-width: 1200px) {
+    .introContent1 img {
+        width: 250px;
+        filter: drop-shadow(0 0 50px #777777);
+        animation: imageTransformation 2s infinite;
+    }
+
+    .introContent2 {
+        width: 370px;
+    }
+      
+    .introContentText h1 {
+        font-size: 42px;
+        animation: Typing1200 5s steps(23) ;
+        transition: 0.5s;
+        margin: 20px 0px;
+    }
+      
+    .introContentText p {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+
+    .introButtons button {
+        width: 135px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .introContentText span {
+        font-size: 18px;
+    } 
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .introContent1 img {
+        width: 200px;
+        filter: drop-shadow(0 0 50px #777777);
+        animation: imageTransformation 2s infinite;
+    }
+
+    .introContent2 {
+        width: 310px;
+    }
+      
+    .introContentText h1 {
+        font-size: 35px;
+        animation: Typing900 5s steps(23);
+        transition: 0.5s;
+        margin: 20px 0px;
+    }
+      
+    .introContentText p {
+        font-size: 16px;
+        margin: 20px 0px;
+    }
+
+    .introButtons button {
+        width: 135px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .introContentText span {
+        font-size: 16px;
+    } 
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .introContent1 img {
+        width: 180px;
+        filter: drop-shadow(0 0 50px #777777);
+        animation: imageTransformation 2s infinite;
+    }
+
+    .introContent2 {
+        width: 280px;
+    }
+      
+    .introContentText h1 {
+        font-size: 25px;
+        animation: Typing700 5s steps(23);
+        transition: 0.5s;
+        margin: 20px 0px;
+    }
+      
+    .introContentText p {
+        font-size: 14px;
+        margin: 20px 0px;
+    }
+
+    .introButtons button {
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .introContentText span {
+        font-size: 12px;
+    } 
+
+    .introContentText svg {
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .introductionContent {
+        display: block;
+    }
+
+    .introContent2 {
+        margin: 50px auto;
+    }
+
+    .introContentText {
+        width: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    .introContentText h1 {
+        animation: none;
+        margin: 15px 0;
+    }
+
+    .introContentText p {
+        margin: 15px 0;
+    }
+
+    .introContentText span {
+        justify-content: center;
+        line-height: 25px;
+    }
+
+    .introButtons {
+        margin: 20px 0;
+    }
+
+    .introButtons button {
+        margin: 5px !important;
+    }
+
+}
+
+@media only screen and (max-width: 600px) and (max-height: 650px)  {
+    .introductionSection {
+        height: auto;
+    }
+
+    .introductionContent {
+        margin: 50px auto;
+    }
+}

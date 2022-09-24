@@ -1,0 +1,84 @@
+.contactSection {
+    width: 100%;
+    height: auto;
+}
+
+.contactContentDiv {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.contactContentDiv h2 {
+    text-align: center;
+    font-size: 48px;
+    Font-family: "Antipasto Pro";
+    font-weight: 100;
+    color: #4E4E4E;
+}
+
+.contactContent {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.contactContent div {
+    width: 300px;
+    margin: 20px 100px;
+    display: flex;
+}
+
+.contactContent div img {
+    width: 50px;
+}
+
+.contactContent div a {
+    width: auto;
+    height: auto;
+    margin: auto 30px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #242424;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contactContent div a:hover {
+    transform: translate(1px, -1px);
+    color: #838072;
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .contactContent div {
+        width: 100%;
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .contactContentDiv {
+        max-width: 1200px;
+        width: 95%;
+        margin: 50px auto;
+    }
+    
+    .contactContent div img {
+        width: 40px;
+    }
+        
+    .contactContent div a {
+        margin: auto 10px;
+        font-size: 18px;
+    }
+
+}

@@ -1,0 +1,334 @@
+.aboutSection {
+    width: 100%;
+    background-color: #E2E0D6;
+}
+
+.aboutHeader {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#ffffff 50%, #E2E0D6 50%);
+}
+
+.aboutHeaderContent {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    display: flex;
+}
+
+.aboutHeader img {
+    width: 250px;
+    opacity: 0.9;
+}
+
+.aboutHeader span:first-child {
+    display: inline-block;
+    transform: rotate(-90deg);
+    margin: auto;
+    font-size: 25px;
+    Font-family: "Antipasto Pro";
+    font-weight: 100;
+    outline: 0;
+}
+
+.aboutHeader span:last-child {
+    display: inline-block;
+    transform: rotate(90deg);
+    margin: auto;
+    font-size: 25px;
+    Font-family: "Antipasto Pro";
+    font-weight: 100;
+    outline: 0;
+}
+
+.aboutContentDiv {
+    max-width: 1200px;
+    width: 90%;
+    height: auto;
+    background-color: #E2E0D6;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.workExperienceDiv {
+    width: 100%;
+    height: auto;
+}
+
+.workExperienceDiv h1 {
+    font-size: 48px;
+    Font-family: "Antipasto Pro";
+    font-weight: 100;
+    color: #000000;
+}
+
+.eachWorkHistory {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.eachWorkHistory .Part1 h5 {
+    font-size: 18px;
+}
+
+.educationHistoryDiv {
+    width: 100%;
+    height: auto;
+}
+
+.educationHistoryDiv h1 {
+    font-size: 48px;
+    Font-family: "Antipasto Pro";
+    font-weight: 100;
+    color: #000000;
+}
+
+.eachEducationHistory {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.part1 {
+    width: 80%;
+    border-top: 3px solid white;
+    color: #2e2e2e;
+    padding: 20px;
+    margin: 40px 0;
+    line-height: 30px;
+}
+
+.part1 h2 {
+    Font-family: "Antipasto Pro";
+    color: #494949;
+    font-size: 28px;
+}
+
+.locationIcon {
+    color: rgb(203, 115, 115);
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.part2 {
+    width: 20%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.part2 p {
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+}
+
+.part2 h1{
+    font-family: "Antipasto Pro";
+    font-weight: 600;
+    color: #4E4E4E;
+    letter-spacing: 2px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .aboutHeader img {
+        width: 200px;
+    }
+
+    .part1 {
+        margin: 30px 0;
+    }
+
+    .part2 p {
+        font-size: 30px;
+    }
+
+    .part2 h1 {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .aboutHeaderContent {
+        width: 450px;
+    }
+
+    .aboutHeader img {
+        width: 180px;
+    }
+
+    .part1 {
+        margin: 20px 0;
+        width: 70%;
+    }
+
+    .part2 {
+        width: 30%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .aboutHeaderContent {
+        width: 400px;
+    }
+
+    .aboutHeader img {
+        width: 150px;
+    }
+    
+    .part1 {
+        margin: 15px 0;
+    }
+
+    .workExperienceDiv h1 {
+        font-size: 42px;
+    }
+
+    .educationHistoryDiv h1 {
+        font-size: 42px;
+    }
+
+    .part2 p {
+        font-size: 28px;
+    }
+
+    .part2 h1 {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .aboutHeaderContent {
+        width: 350px;
+    }
+
+    .workExperienceDiv h1 {
+        font-size: 32px;
+    }
+
+    .educationHistoryDiv h1 {
+        font-size: 32px;
+    }
+
+    .part2 p {
+        font-size: 24px;
+    }
+
+    .part2 h1 {
+        font-size: 24px;
+    }
+
+    .part1 h2 {
+        font-size: 24px;
+    }
+
+    .part1 h5 {
+        font-size: 12px;
+    }
+
+    .part1 span {
+        font-size: 14px;
+    }
+
+    .part1 li {
+        font-size: 14px;
+    }
+
+    .part1 p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .workExperienceDiv h1 {
+        font-size: 28px;
+    }
+
+    .educationHistoryDiv h1 {
+        font-size: 28px;
+    }
+
+    .part2 p {
+        font-size: 18px;
+    }
+
+    .part2 h1 {
+        font-size: 18px;
+    }
+
+    .part1 {
+        line-height: 25px;
+    }
+
+    .part1 h2 {
+        font-size: 18px;
+    }
+
+    .part1 h5 {
+        font-size: 10px;
+    }
+
+    .part1 span {
+        font-size: 12px;
+    }
+
+    .part1 li {
+        font-size: 12px;
+    }
+
+    .part1 p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 350px) {
+
+    .aboutHeaderContent {
+        width: 280px;
+    }
+
+    .aboutHeader span {
+        font-size: 20px !important;
+    }
+
+    .aboutHeader img {
+        width: 120px;
+    }
+
+    .part1 h2 {
+        font-size: 16px;
+    }
+
+    .part1 h5 {
+        font-size: 10px;
+    }
+
+    .part1 span {
+        font-size: 10px;
+    }
+
+    .part1 li {
+        font-size: 10px;
+    }
+
+    .part1 p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+
+}
