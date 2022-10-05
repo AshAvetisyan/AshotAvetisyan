@@ -90,7 +90,7 @@ function Portfolio() {
             portfolioNum: 1,
             portfolioName: "Richie's",
             portfolioImg: richieImg,
-            portfolioLink: "https://github.com/AshAvetisyan/Richies",
+            portfolioLink: "http://ashot.geeklab.am/Richie/",
             portfolioDescription: "Richie's - first website.Created to practice my markup language skills and work easily with website layout.I've used right html structures and beautiful styles(designed by me),also worked with flexbox to use website responsively.",
             usedTechnologies: ["HTML5", "CSS3 | Responsive, Flexbox", "Git | Version Control"]
         },
@@ -98,7 +98,7 @@ function Portfolio() {
             portfolioNum: 2,
             portfolioName: "Medianstack",
             portfolioImg: medianstackImg,
-            portfolioLink: "https://medianstack.github.io/",
+            portfolioLink: "http://ashot.geeklab.am/Medianstack/",
             portfolioDescription: "Medianstack - A beautiful colorful Website.Created to work with Javascript and to make a beautiful Software Services website.I've worked with Javascript DOM, and practiced my knowledge to understand the bascis of Javascript.",
             usedTechnologies: ["HTML5", "CSS3 | Responsive, Flexbox", "Javascript | DOM", "Git | Version Control"]
         },
@@ -106,7 +106,7 @@ function Portfolio() {
             portfolioNum: 3,
             portfolioName: "Flora Flowers",
             portfolioImg: floraFlowersImg,
-            portfolioLink: "https://github.com/AshAvetisyan/flowers-boutique",
+            portfolioLink: "https://rychiee.github.io/fionaflowers/",
             portfolioDescription: "FloraFlowers - The most functional website I've made.Created to practice my React js skills and to make more functional websites.I've mostly worked with data-structures, components, react-router-dom and understood the work style of React js, now I can easily work with React.",
             usedTechnologies: ["HTML5", "CSS3 | Responsive, Flexbox", "React.js | Hooks, Data Structures, Dynamic JSX", "Redux | State Management", "Git | Version Control"]
         }
@@ -180,8 +180,8 @@ function Portfolio() {
                                 </div>
                                 <div className="mobPortfolioContentInfo">
                                     <h5>Used Technologies for application creation:</h5>
-                                    {item.usedTechnologies.map((eachTechnologie) => (
-                                        <li>{eachTechnologie}</li>
+                                    {item.usedTechnologies.map((eachTechnologie, index) => (
+                                        <li key={index}>{eachTechnologie}</li>
                                     ))}
                                 </div>
                             </div>
