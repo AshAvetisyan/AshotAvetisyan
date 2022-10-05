@@ -114,7 +114,7 @@ function Header() {
                     }}/>
                     <div className="mobileMenuActive" style={secStatus ? mobActive : mobUnactive}>
                         <div className="mobileMenuDiv">
-                            <li><Link activeClass="active" duration={900} isDynamic={true} offset={-80} smooth ignoreCancelEvents to="home" onClick={() => {
+                            <li><Link activeClass="active" duration={900} isDynamic={true} offset={-80} smooth ignoreCancelEvents to="ashotavetisyan" onClick={() => {
                                 setSecStatus(!secStatus)
                             }}>Home</Link></li>
                             <li><Link activeClass="active" duration={900} isDynamic={true} offset={-80} smooth ignoreCancelEvents to="skills" onClick={() => {
